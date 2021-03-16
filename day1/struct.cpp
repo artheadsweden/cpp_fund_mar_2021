@@ -32,7 +32,7 @@ int main()
 {
     Person2 a;
     Person1 b;
-    a.name = "Ture";
+
     a.set_name("Alice");
 
 

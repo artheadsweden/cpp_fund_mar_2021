@@ -10,12 +10,12 @@ auto func()
 int main()
 {
     int value = 34;
-    
-    auto f = [value](int a, int b){
+    int age = 45;
+    auto f = [&value, age](int a, int b){
         cout << "Hej" << endl;
         int x = value;
  
-        return x + a + b;
+        return x + a + b + age;
     };
     auto result = f(12, 13);
     cout << result << endl;

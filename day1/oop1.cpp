@@ -5,7 +5,7 @@ using namespace std;
 class A
 {
 public:
-    A() : x_(0)
+    A() : x_{0}
     {
         cout << "Default Constructor in A" << endl;
     }
@@ -31,7 +31,7 @@ private:
 class B
 {
 public:
-    B(int n) : a_(n)
+    B(int n) : a_{n}
     {
         cout << "Constructor for B with argument " << n << endl;
     }
