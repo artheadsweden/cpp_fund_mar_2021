@@ -73,7 +73,7 @@ public:
 private:
     // Helpers
     // Get a node at index
-    Node<T> get_node(int index);
+    Node<T>* get_node(int index);
     // Deep copy the content from other.
     void copy(const LinkedList<T>& other);
 
