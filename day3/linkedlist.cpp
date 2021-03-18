@@ -1,3 +1,14 @@
+/*
+    Problemet var ju att vi hade vissa utskrifter som var anpassade 
+    till att datat som lagrades i listan var möjliga att skriva ut. 
+    Vi hade kunnat lösa detta antingen genom att överlagra <<-operatorn,
+    så som vi gjorde tidigare, eller som jag har gjort nu, genom att säga 
+    att alla utskrifter av data skall vara data.get_name(). 
+
+    Jag hade ju redan gjort det i print, men hade missat att vi hade en sådan 
+    utskrift i destruktorn för Node också. I denna version är det fixat.
+*/
+
 #include <iostream>
 #include <string>
 
@@ -50,7 +61,7 @@ Node<T>::Node(T data) : data{data}, next{nullptr} {}
 template <typename T>
 Node<T>::~Node()
 {
-    cout << "Deleting node with data "  << data << endl;
+    cout << "Deleting node with data "  << data.get_name() << endl;
 }
 
 template <typename T>
