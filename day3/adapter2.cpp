@@ -13,7 +13,6 @@ int main()
     // To lower
     string s2{s};
     transform(s2.begin(), s2.end(), s2.begin(), [](unsigned char c){return tolower(c);});
-    cout << s2 << endl;
 
     // Split
     string delimiter = " ";
@@ -34,11 +33,7 @@ int main()
     {    
         result.push_back(s3);
     }    
-    for(auto word : result)
-    {
-        cout << word << ", ";
-    }
-    cout << endl;
+
 
     return 0;
 }

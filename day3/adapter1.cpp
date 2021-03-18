@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    stack<int, vector<int>> st;
+    stack<int> st;
     
     return 0;
 }
